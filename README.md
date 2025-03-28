@@ -1,22 +1,40 @@
-# Python Calculator in Docker
+# Калькулятор на Python
 
-Простое консольное приложение калькулятора, упакованное в Docker-контейнер.
+Простой калькулятор, использующийся в командной строке, запакованный с помощью Docker.
 
-## Функциональность
+## Особенност
+- Базовые операции: `+`, `-`, `*`, `/`
+- Поддержка Docker для быстрого развертывания
 
-- Сложение
-- Вычитание
-- Умножение
-- Деление
+## Установка
 
-## Требования
+### 1. Клонируйте репозиторий
+```bash
+git clone https://github.com/hqqqqqqqqqqqqqqqqq/python-calculator.git
+cd python-calculator
+```
 
-- Docker
-- Python 3.8+ (только для локальной разработки)
+### 2. Локальный запуск (без Docker)
+#### Установите зависимости
+```bash
+pip install -r requirements.txt
+```
 
-## Установка и запуск
+#### Запустите калькулятор
+```bash
+python -m app
+```
 
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/yourusername/python-calculator.git
-   cd python-calculator
+### 3. Запуск с Docker
+#### Забилдите image
+```bash
+docker build -t python-calculator .
+```
+
+#### Запустите
+```bash
+docker run -it python-calculator
+```
+
+## ЛИцензия
+MIT

@@ -36,5 +36,5 @@ docker build -t python-calculator .
 docker run -it python-calculator
 ```
 
-## ЛИцензия
+## Лицензия
 MIT
